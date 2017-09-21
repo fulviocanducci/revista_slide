@@ -12,35 +12,29 @@
 	<script src="js/jquery.booklet.latest.min.js"></script>
 	<style>
 		*, html, body {
-			background-color: blue;
+			background-color: #ccc;
 		}
 	</style>
 </head>
 <body>
-	<div id="mybook">
+	<div id="mybook" class="booklet">
 	    <div>	        
-	        <img src="imgs/1.jpg" border="0" style="width: 400px; height: 300px">
+	        <img src="imgs/1a.jpg">
 	    </div>
 	    <div>	        
-	        <img src="imgs/3.jpg" border="0" style="width: 400px; height: 300px">
+	        <img src="imgs/2b.jpg">
 	    </div>
 	    <div>	        
-	        <img src="imgs/2.jpg" border="0" style="width: 400px; height: 300px">
+	        <img src="imgs/3c.jpg">
 	    </div>
 	    <div>	        
-	        <img src="imgs/4.jpg" border="0" style="width: 400px; height: 300px">	      
-	    </div>
+	        <img src="imgs/4d.jpg">	      
+	    </div>	    
 	    <div>	        
-	        <img src="imgs/5.jpg" border="0" style="width: 400px; height: 300px">
-	    </div>
+	        <img src="imgs/5e.jpg">	      
+	    </div>	
 	    <div>	        
-	        <img src="imgs/6.jpg" border="0" style="width: 400px; height: 300px">
-	    </div>
-	    <div>	        
-	        <img src="imgs/7.jpg" border="0" style="width: 400px; height: 300px">
-	    </div>
-	    <div>	        
-	        <img src="imgs/8.jpg" border="0" style="width: 400px; height: 300px">
+	        <img src="imgs/6f.png">	      
 	    </div>
 	</div>
 	<script>
@@ -48,10 +42,16 @@
 			{
 				$('#mybook').booklet({ 
 						arrows: true,
-						pageSelector: true,
+						pageSelector: false,
 						pageBorder: 1,
-						width: 600,
-						height: 500 
+						width: 750,
+						height: 483,
+						pagePadding: 12,
+						pageNumbers: true,
+						shadows: true,
+						shadowTopFwdWidth: 0,
+						shadowTopBackWidth: 0,
+						shadowBtmWidth: 0
 					});
 			})	    
 
